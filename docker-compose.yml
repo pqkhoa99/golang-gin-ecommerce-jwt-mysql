@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysql
+      - MYSQL_DB=test
+    ports:
+      - '3306:3306'
